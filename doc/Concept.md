@@ -29,3 +29,5 @@ This document compares three Kubernetes tools — Minikube, Kind, and K3d — fo
 Based on the analysis, K3d is recommended for AsciiArtify's Proof of Concept due to its speed, simplicity, and lightweight nature.
 
 ## Demonstration
+
+![k3d-demo](k3d-demo.gif)
