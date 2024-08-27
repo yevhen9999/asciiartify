@@ -31,3 +31,20 @@ Based on the analysis, K3d is recommended for AsciiArtify's Proof of Concept due
 ## Demonstration
 
 ![k3d-demo](k3d-demo.gif)
+
+```
+# Install K3d
+curl -s https://raw.githubusercontent.com/k3d-io/k3d/main/install.sh | bash
+
+# Create K3d cluster
+k3d cluster create mycluster
+
+# Deploy Hello World application
+kubectl create deployment hello-world --image=gcr.io/google-samples/hello-app:1.0
+
+# Expose the application
+kubectl expose deployment hello-world --type=LoadBalancer --port 8080
+
+# Get the list of services to access the application
+kubectl get services
+```
